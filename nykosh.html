@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nstyle.css">
+    <script src="https://kit.fontawesome.com/1bfa72dd94.js" crossorigin="=anonymous"></script>
+</head>
+<body>
+   <div class="hero-header">
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-n"></i>
+                <div class="logo-text"><span id="n">N</span>ykosh</div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navlinks">
+                    <li><a href="nykosh.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="NykoshCV.pdf">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="hero-pic">
+                <img src="images/aa.jpg">
+            </div>
+            <div class="hero-text">
+                <h5>Hi I'm an <span class="input">Aspiring Game Developer</span></h5>
+                <h1>Nykosh</h1>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="hero-footer">
+    <div class="hero-wrapper">
+        <footer>
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p id="email"><i class="fas fa-paper-plane"></i>25niiikuz@gmail.com</p>
+                            <p id="phone"><i class="fas fa-phone-square-alt"></i>817-647-2030</p>
+                            <br>
+                            <div class="social">
+                                <a href="https://www.facebook.com/TangInaMe000/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/nykosh-magsalin-611a6535b/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/xnyx2525?igsh=bDN2bXB3YTlkb3Ez"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@kyn_kyu?_t=ZP-8w99CDpG8Uh&_r=1S"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a href="NykoshCV.pdf" class="btn active">Download CV</a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name, currently not working" required>
+                                <input type="email" name="email" placeholder="Your Email, currently not working" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message, currently not working"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © Nykosh.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+   </div>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+   <script>
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector("navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+    var typed=new Typed(".input",{
+        strings:["Aspiring Game Developer"],
+        typedSpeed:70,
+        backSpeed:55,
+        loop:true
+    })
+   </script>
+</body>
+</html>

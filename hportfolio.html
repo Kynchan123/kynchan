@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/1bfa72dd94.js" crossorigin="=anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Lexis-Photoroom.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Hanz Alexis</span> <br> Laureen C. Garcia</h1>
+           
+        </div>
+    </div>
+   </div>
+   <!-- -----------about------------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+           <div class="about-col-1">
+            <img src="images/img.png">
+           </div>
+           <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="descrip">I'm working towards a brighter future where I can grow both personally and professionally. I want to step outside my comfort zone, learn more about the hospitality industry, and develop my skills along the way. My goal is to become a better version of myself, building a successful career and constantly striving for improvement.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('extracurricular')">Extracurricular</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('seminar')">Attended Seminar</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span></span>Easy to train</li>
+                    <li><span></span>Flexible</li>
+                    <li><span></span>Punctual</li>
+                    <li><span></span>Approachable</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="extracurricular">
+                <ul>
+                    <li><span>2022-2023</span><br>AHMS Auditor of BSHM Department in DCLC</li>
+                    <li><span>2023-2024</span><br>AHMS Auditor of BSHM Department in DCLC</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2024-Present</span><br>Dr. Carlos S. Lanting College</li>
+                    <li><span>2020-2021</span><br>Mulanay Institute</li>
+                    <li><span>2018-2019</span><br>Ilayang Yuni Junior and Senior Integrated National High School</li>
+                    <li><span>2014-2015</span><br>Sumagonsong Elementary School</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="seminar">
+                <ul>
+                    <li><span>2023</span><br>Empowering futures: "A Guide To Financial Wellness For Student Budgeting And Planning"</li>
+                    <li><span>2023</span><br>Barista Seminar Workshop</li>
+                    <li><span>2024</span><br>Front Office Seminar: Function, Duties, Responsibilities, and Personal Attributes</li>
+                    <li><span>2024</span><br>Principles for carreer advancement</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </div>
+   </div>
+   <!-- -----------contacts------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>hanlexireen@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>09995195516</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name, currently not working" required>
+                        <input type="email" name="email" placeholder="Your Email, currently not working" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message, currently not working"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Hanz.</p>
+        </div>
+    </div>
+    
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   </script>
+
+   <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+   </script>
+    
+</body>
+</html>

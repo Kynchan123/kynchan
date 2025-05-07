@@ -1,0 +1,62 @@
+button{
+    border-radius: 6px;
+}
+#img1{
+    float: left;
+    margin: 5px;
+    border-style: double;
+}
+body{
+    color: white;
+    margin: 5px;
+    background-color: slategrey;
+    
+}
+.text{
+    text-align: center;
+    text-decoration: none;
+}
+li{
+    text-align: center;
+    text-decoration: none;
+}
+dd{
+    text-align: center;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    
+}
+ul{
+    text-align: center;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+    text-decoration: none;
+}
+footer{
+    text-align: center;
+    clear: both;
+}
+*{
+    box-sizing: border-box;
+}
+.box{
+    text-align: center;
+    border: 2px solid;
+    padding: 25px;
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+.box2{
+    text-align: center;
+    border: 2px solid;
+    padding: 44px;
+    height: 50%;
+    width: 50%;
+    float: left;
+}
