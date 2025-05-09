@@ -297,7 +297,10 @@ form btn2{
     margin-top: 20px;
 }
 /*****************phone*************************/
-@media screen(max-width:930px)
+nav.fas{
+    display: none;
+}
+@media only screen and (max-width: 600px)
 {
     nav .togglebtn{
         display: initial;
@@ -344,6 +347,40 @@ form btn2{
     }
     nav .navlinks.open{
         right: 0;
+    }
+    nav.fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
     }
 }
 @media(max-width:768px)
